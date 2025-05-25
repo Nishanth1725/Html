@@ -198,3 +198,43 @@ span{
     background-color: lightcoral;
     box-shadow: 0 0 25px lightcoral;
 }
+    .education{
+      width:100%;
+      flex-wrap: nowrap;
+      display: flex;
+      overflow-x: auto;
+      padding:2rem 1rem;
+      justify-content: center;
+    }
+
+    .glow-box {
+      flex: 0 0 250px;
+      height:320px;
+      padding: 1rem;
+      overflow: hidden;
+      transition: box-shadow 0.3s ease;
+      border-radius: 10px;
+      text-align: center;
+      box-sizing: border-box;
+      color: lightsalmon;
+      font-family: Arial, sans-serif;
+      background-color: lightsalmon;
+      font-size: 1.2rem;
+    }
+   .glow-box img {
+     width: 100%;
+      height: auto;
+      object-fit: cover;
+      border-radius: 4px;
+      margin-bottom: 10px; 
+    }
+    .glow-box:hover{
+      box-shadow: 0 0 15px 16px rgb(222, 134, 134);
+      color:white;
+      transform: scale(1.05);
+    }
+@media (min-width:600px){
+    .education{
+        gap:2rem;
+    }
+}
